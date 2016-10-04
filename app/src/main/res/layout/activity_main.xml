@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.uiet.mimascota.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imvDog"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/dog"
+        android:layout_below="@+id/miActionBar"
+        />
+    <Button
+        android:id="@+id/btnVerMascotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_boton"
+        android:layout_below="@+id/imvDog"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:onClick="irVerMascotas"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvMascotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        card_view:cardCornerRadius="@dimen/radio"
+        >
+        <ImageView
+            android:id="@+id/imvMiMascota"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/perrito_1"
+            />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginBottom="50dp"
+        >
+        <ImageButton
+            android:id="@+id/imgbHuesoBlancoLike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hueso_ico_blanco"
+            android:scaleType="fitStart" />
+        <TextView
+            android:id="@+id/NombreMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_mascota"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/tamaño_texto"
+            />
+        <ImageButton
+            android:id="@+id/imgHuesoAmarillo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hueso_ico_amarillo"
+            android:layout_marginLeft="@dimen/margen_left"
+            android:scaleType="fitStart" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
